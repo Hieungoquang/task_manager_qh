@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textColor="#0A84FF"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách Mới"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xong"
+            android:textColor="#0A84FF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_list"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_circle"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:padding="16dp"
+            app:tint="#FFFFFF"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Tên danh sách"
+            android:textColorHint="#8E8E93"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MÀU SẮC"
+        android:textColor="#8E8E93"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:alignmentMode="alignBounds"
+        android:useDefaultMargins="true"
+        android:background="@drawable/bg_rounded_list"
+        android:padding="12dp">
+
+        <View android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle" android:backgroundTint="#FF3B30" android:layout_margin="8dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle" android:backgroundTint="#FF9500" android:layout_margin="8dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle" android:backgroundTint="#FFCC00" android:layout_margin="8dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle" android:backgroundTint="#34C759" android:layout_margin="8dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle" android:backgroundTint="#5AC8FA" android:layout_margin="8dp"/>
+        <View android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle" android:backgroundTint="#007AFF" android:layout_margin="8dp"/>
+    </GridLayout>
+
+</LinearLayout>
